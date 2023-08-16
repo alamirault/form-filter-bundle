@@ -29,6 +29,7 @@ class SpiriitFormFilterBundle extends Bundle
     public function build(ContainerBuilder $container)
     {
         parent::build($container);
+        //
 
         $container->addCompilerPass(new FormDataExtractorPass(), PassConfig::TYPE_BEFORE_OPTIMIZATION, 0);
     }
